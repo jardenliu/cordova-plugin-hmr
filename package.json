@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-hmr",
+  "version": "0.0.1",
+  "description": "A Cordova Reload Plugin",
+  "cordova": {
+    "id": "cordova-plugin-hmr",
+    "platforms": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jardenliu/cordova-plugin-hmr.git"
+  },
+  "keywords": [
+    "cordova",
+    "livereload",
+    "hot-replace",
+    "broswer-sync",
+    "ecosystem:cordova"
+  ],
+  "author": "jardenliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jardenliu/cordova-plugin-hmr/issues"
+  },
+  "homepage": "https://github.com/jardenliu/cordova-plugin-hmr#readme",
+  "dependencies": {
+    "elementtree": "^0.1.7",
+    "glob": "^7.1.3"
+  }
+}
