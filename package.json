@@ -1,14 +1,14 @@
 {
-  "name": "cordova-plugin-hmr",
+  "name": "cordova-plugin-remote",
   "version": "0.0.1",
   "description": "A Cordova Reload Plugin",
   "cordova": {
-    "id": "cordova-plugin-hmr",
+    "id": "cordova-plugin-remote",
     "platforms": []
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jardenliu/cordova-plugin-hmr.git"
+    "url": "git+https://github.com/jardenliu/cordova-plugin-remote.git"
   },
   "keywords": [
     "cordova",
@@ -20,9 +20,9 @@
   "author": "jardenliu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jardenliu/cordova-plugin-hmr/issues"
+    "url": "https://github.com/jardenliu/cordova-plugin-remote/issues"
   },
-  "homepage": "https://github.com/jardenliu/cordova-plugin-hmr#readme",
+  "homepage": "https://github.com/jardenliu/cordova-plugin-remote#readme",
   "dependencies": {
     "elementtree": "^0.1.7",
     "glob": "^7.1.3"

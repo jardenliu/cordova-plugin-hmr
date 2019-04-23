@@ -1,1 +1,1 @@
-# cordova-plugin-hmr
+# cordova-plugin-remote

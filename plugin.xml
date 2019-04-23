@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-hmr" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>cordova-plugin-hmr</name>
+<plugin id="cordova-plugin-remote" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-remote</name>
     <description>A Cordova Reload Plugin</description>
     <keywords>cordova,livereload,hot-replace,broswer-sync</keywords>
-    <repo>https://github.com/jardenliu/cordova-plugin-hmr.git</repo>
+    <repo>https://github.com/jardenliu/cordova-plugin-remote.git</repo>
     <hook type="after_plugin_install" src="lib/npm-install.js"/>
     <hook type="after_prepare" src="lib/reload-hook.js"/>
     <hook></hook>
