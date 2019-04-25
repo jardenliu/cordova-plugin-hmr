@@ -3,3 +3,4 @@ node_modules/
 bin/
 test.js
 .DS_Store
+.vscode/

@@ -4,7 +4,21 @@
     <description>A Cordova Reload Plugin</description>
     <keywords>cordova,livereload,hot-replace,broswer-sync</keywords>
     <repo>https://github.com/jardenliu/cordova-plugin-remote.git</repo>
+
+    <js-module name="RemoteInject" src="www/RemoteInject.js">
+        <clobbers target="cordova.remoteInject"/>
+    </js-module>
+
+    <platform name="osx">
+        <config-file target="config.xml" parent="/*">
+            <feature name="RemoteInject">
+                <param name="osx-package" value="CDVRemoteInject"/>
+            </feature>
+        </config-file>
+        <header-file src="src/osx/CDVRemoteInject.h"/>
+        <source-file src="src/osx/CDVRemoteInject.m"/>
+    </platform>
+
     <hook type="after_plugin_install" src="lib/npm-install.js"/>
     <hook type="after_prepare" src="lib/remote-hook.js"/>
-    <hook></hook>
 </plugin>
