@@ -13,6 +13,7 @@
         <config-file target="config.xml" parent="/*">
             <feature name="RemoteInject">
                 <param name="osx-package" value="CDVRemoteInject"/>
+                <param name="onload" value="true"/>
             </feature>
         </config-file>
         <header-file src="src/osx/CDVRemoteInject.h"/>
