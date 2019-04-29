@@ -24,8 +24,9 @@
 -(void) injectCordovaJsForRemotePage {
     NSString* isWebviewRemoteInject = [self settingForkey: @"isWebviewRemoteInject"];
     if(isWebviewRemoteInject){
-        NSString* url =[self.commandDelegate pathForResource:@"cordova.js"];
-        NSString* injectCordovaJs =[ NSString stringWithFormat: @";(function injectCordovaJS(){var scriptTag = document.createElement('script');scriptTag.src ='file://'+ '%@';document.body.appendChild(scriptTag);})();",url];
+        // NSString* url =[self.commandDelegate pathForResource:@"cordova.js"];
+        // NSString* injectCordovaJs =[ NSString stringWithFormat: @";(function injectCordovaJS(){var scriptTag = document.createElement('script');scriptTag.src ='file://'+ '%@';document.body.appendChild(scriptTag);})();",url];
+        NSString* injectCordovaJs =[ NSString stringWithFormat: @";(function injectCordovaJS(){var scriptTag = document.createElement('script');scriptTag.src ='cordova/cordova.js';document.body.appendChild(scriptTag);})();"];
 
         id win = [self.webView windowScriptObject];
         

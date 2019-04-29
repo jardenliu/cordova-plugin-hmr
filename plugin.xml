@@ -9,7 +9,7 @@
         <clobbers target="cordova.remoteInject"/>
     </js-module>
 
-    <!-- <platform name="osx">
+    <platform name="osx">
         <config-file target="config.xml" parent="/*">
             <feature name="RemoteInject">
                 <param name="osx-package" value="CDVRemoteInject"/>
@@ -18,7 +18,7 @@
         </config-file>
         <header-file src="src/osx/CDVRemoteInject.h"/>
         <source-file src="src/osx/CDVRemoteInject.m"/>
-    </platform> -->
+    </platform>
 
     <hook type="after_plugin_install" src="lib/npm-install.js"/>
     <hook type="after_prepare" src="lib/remote-hook.js"/>
