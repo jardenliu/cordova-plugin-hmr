@@ -58,20 +58,45 @@
         .start-btn:hover {
             box-shadow: 0 12px 18px -10px #b5f2d1, 0px 4px 23px 0px rgba(0, 0, 0, 0.1), 0px 8px 10px -5px #d8f8e7;
         }
+
+        .address-input {
+            padding: 5px 10px;
+            margin: 10px;
+            width: 280px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h2 class="title">Cordova Plugin HMR</h2>
-        <button id="start-btn" class="start-btn">Start WebPack Dev</button>
+        <div>Remote Url: <input id="input" class="address-input" /></div>
+        <button id="start-btn" class="start-btn">Start Remote Page</button>
     </div>
 
     <script>
+        var isAutoRemote = false
+
+        var targetUrl = "__TARGET_URL__"
         var btn = document.querySelector('#start-btn');
         btn.addEventListener('click', function (e) {
-            window.location.href = "__TARGET_URL__"
+            window.location.href = targetUrl
         });
+
+        var input = document.querySelector('#input')
+        input.value = targetUrl
+
+        input.addEventListener('input', function (e) {
+            targetUrl = e.target.value;
+        })
+
+        try {
+            isAutoRemote = __AUTO_REMOTE__
+        } catch (e) {}
+
+        if (isAutoRemote) {
+            window.location.href = targetUrl
+        }
     </script>
 </body>
 
