@@ -26,7 +26,7 @@
     if(isWebviewRemoteInject){
         NSString* url =[self.commandDelegate pathForResource:@"cordova.js"];
         NSString* injectCordovaJs =[ NSString stringWithFormat: @";(function injectCordovaJS(){var scriptTag = document.createElement('script');scriptTag.src ='file://'+ '%@';document.body.appendChild(scriptTag);})();",url];
-        
+
         id win = [self.webView windowScriptObject];
         
         [win evaluateWebScript:injectCordovaJs];
